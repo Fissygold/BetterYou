@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <title>Better you</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand ms-5 fs-2" href="#">Better<span style="color: palevioletred;">You</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home"><span style="color: palevioletred;">Home</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Supplements</a></li>
+                  <li><a class="dropdown-item" href="#">Therapy</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Training Sessions</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+            </ul>
+            
+            
+          </div>
+        </div>
+      </nav>
+   
+
+
+
+      <!-- Carousel -->
+      <div  id="home" id="ccarouselExampleAutoplaying" class="carousel slide " data-bs-ride="carousel">
+        <div class="carousel-indicators" >
+          <button type="button" data-bs-target="#ccarouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#ccarouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#ccarouselExampleAutoplaying" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/bigstock-Yoga-Outdoors-In-Public-Park-195810652-small-810x540.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/Full-body-workout-training-program.webp" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/pexels-alex-green-5699431-1.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#ccarouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#ccarouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+
+
+      <section id="about" class="about my-5">
+        <div class="container ">
+          <div class="text-center my-5">
+            <h1>About <span style="color: palevioletred;">Us</span></h1>
+            <hr class="w-25 m-auto">
+          </div>
+
+          <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-6 col-12">
+              <h3 >What do you wanna know?</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                 Deserunt, reiciendis quia accusamus illo ipsum sit! Lorem ipsum dolor sit amet.
+                </p>
+                <button type="button" class="btn"  style="background: palevioletred; color:white; ">Learn More</button>
+
+                <div data-aos="fade-up" data-aos-duration="1000" class="accordion pt-4" id="accordionPanelsStayOpenExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                        Accordion Item #1
+                      </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                      <div class="accordion-body">
+                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                        Accordion Item #2
+                      </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                      <div class="accordion-body">
+                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                        Accordion Item #3
+                      </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                      <div class="accordion-body">
+                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6 col-12">
+              <img data-aos="fade-zoom-in"
+     data-aos-easing="ease-in-back"
+     data-aos-delay="300"
+     data-aos-offset="0" class="img img-fluid  m-auto pt-5 w-75 ps-5" src="/img/avatar3.png" alt="">
+            </div>
+          </div>
+      </section>
+
+
+
+      <!-- Services -->
+      <section id="services" class="services py-5 bg-light">
+        <div class="container">
+          <div class="text-center my-5">
+            <h1>Our <span style="color: palevioletred;">Services</span></h1>
+            <hr class="w-25 m-auto">
+          </div>
+          <div class="row"  data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
+            <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+              <div class="card bg-dark text-light">
+                <div class="card-body">
+                  <i class="bi bi-1-circle"></i>
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            
+          </div>
+
+          <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+            <div class="card">
+              <div class="card-body">
+                <i class="bi bi-2-circle-fill"></i>
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn "style="background: palevioletred; color:white;" >Go somewhere</a>
+              </div>
+          </div>
+          
+        </div>
+
+        <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+          <div class="card bg-dark text-light">
+            <div class="card-body">
+              <i class="bi bi-3-circle"></i>
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        
+      </div>
+
+      
+
+          </div>
+
+
+          <div class="row mt-5" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
+            <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+              <div class="card bg-light text-dark">
+                <div class="card-body">
+                  <i class="bi bi-4-circle-fill"></i>
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" style="background: palevioletred; color:white;" class="btn ">Go somewhere</a>
+                </div>
+            </div>
+            
+          </div>
+
+          <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+            <div class="card bg-dark text-light">
+              <div class="card-body">
+                <i class="bi bi-5-circle"></i>
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+          </div>
+          
+        </div>
+
+        <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+          <div class="card bg-light text-dark">
+            <div class="card-body">
+              <i class="bi bi-6-circle-fill"></i>
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn" style="background: palevioletred; color:white;">Go somewhere</a>
+            </div>
+        </div>
+        
+      </div>
+
+      
+
+          </div>
+          
+      </section>
+
+
+      <!-- team section -->
+
+
+      <section class="team my-5 text-center">
+
+        <div class="container">
+           <div class="text-center my-5">
+            <h1>Our <span style="color: palevioletred;">Team</span></h1>
+            <hr class="w-25 m-auto">
+          </div>
+
+              <div class="row">
+  <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+    <div class="card" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
+      <div class="card-body"  >
+        <img src="img/avatar3.png" class="img-fluid rounded-circle  border border-primary p-3 w-50" alt="">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Learn More</a>
+      </div>
+      <p class="socials">
+              <i class="bi bi-twitter text-dark mx-1"></i>
+              <i class="bi bi-facebook text-dark mx-1"></i>
+              <i class="bi bi-linkedin text-dark mx-1"></i>
+              <i class="bi bi-discord text-dark mx-1"></i>
+            </p>
+    </div>
+  </div>
+
+  <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+    <div data-aos="fade-zoom-in"
+     data-aos-easing="ease-in-back"
+     data-aos-delay="300"
+     data-aos-offset="0" class="card" >
+      <div class="card-body">
+        <img src="img/avatar5.png" class="img-fluid rounded-circle  border border-primary p-3 w-50" alt="">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Learn More</a>
+      </div>
+      <p class="socials">
+              <i class="bi bi-twitter text-dark mx-1"></i>
+              <i class="bi bi-facebook text-dark mx-1"></i>
+              <i class="bi bi-linkedin text-dark mx-1"></i>
+              <i class="bi bi-discord text-dark mx-1"></i>
+            </p>
+    </div>
+  </div>
+
+  <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+    <div data-aos="fade-left" class="card">
+      <div class="card-body">
+        <img src="img/avatar6.png" class="img-fluid rounded-circle  border border-primary p-3 w-50" alt="">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Learn More</a>
+      </div>
+      <p class="socials">
+              <i class="bi bi-twitter text-dark mx-1"></i>
+              <i class="bi bi-facebook text-dark mx-1"></i>
+              <i class="bi bi-linkedin text-dark mx-1"></i>
+              <i class="bi bi-discord text-dark mx-1"></i>
+            </p>
+    </div>
+  </div>
+</div>
+        </div>
+       
+
+      </section>
+
+
+
+
+
+      <section id="contact" class="services section-padding"> 
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center pb-5 pt-7">
+                        <h2>Contact Us</h2>
+                    </div>
+                </div>
+            </div>
+
+            <form class="pb-5">
+              <div class="mb-3 ">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              </div>
+              <button type="submit" class="btn"  style="background: palevioletred; color:white; ">Submit</button>
+            </form>
+                
+        </div>
+      </section>
+
+
+
+      <footer class="p-2 text-center" style="background-color: palevioletred;">
+        <div class="container">
+          <p class="text-white">
+            Developed by Flow Tech  &#169  2023
+          </p>
+          <p class="socials">
+            <i class="bi bi-twitter text-light mx-1"></i>
+            <i class="bi bi-facebook text-light mx-1"></i>
+            <i class="bi bi-linkedin text-light mx-1"></i>
+            <i class="bi bi-discord text-light mx-1"></i>
+          </p>
+        </div>
+      </footer>
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
